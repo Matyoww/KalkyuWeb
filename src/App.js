@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import Homepage from "./components/Homepage";
+import BasicCalc from "./components/BasicCalc";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 
-function App() {
+export default function App() {
+  const theme = createTheme({
+    palette: {
+      background: {
+        default: "#B7CB9C",
+      },
+    },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="basiccalc" element={<BasicCalc />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
-
-export default App;
