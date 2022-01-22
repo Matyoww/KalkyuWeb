@@ -124,54 +124,69 @@ export default function BasicCalc() {
         justifyContent: "center",
         alignItems: "center",
       }}
-      mt={12}
-      mb={14}
+      mt={10}
+      mb={10}
     >
-      <InfoTextField
-        margin="normal"
-        value={info}
-        placeholder="Enter here"
-        onChange={(e) => {
-          setInfo(e.target.value);
-        }}
-        inputProps={{
-          style: { fontSize: 20, textAlign: "right", color: "#585858" },
-        }}
+      <Box
+        display="flex"
+        backgroundColor="#ACACAC"
+        pt={2}
+        pb={4}
         sx={{
-          minWidth: 400,
-          border: 4,
-          borderRadius: 3,
-          borderColor: "#95A67C",
-          backgroundColor: "#E5E5E5",
-        }}
-      />
-
-      <Typography
-        align="right"
-        sx={{
-          minWidth: 400,
-          color: "#585858",
-          fontSize: 25,
-          padding: 2,
-          border: 4,
-          borderRadius: 3,
-          borderColor: "#95A67C",
-          backgroundColor: "#E5E5E5",
+          width: 500,
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: 5,
+          boxShadow: 3,
         }}
       >
-        {result}
-      </Typography>
+        <InfoTextField
+          margin="normal"
+          value={info}
+          placeholder="Enter here"
+          onChange={(e) => {
+            setInfo(e.target.value);
+          }}
+          inputProps={{
+            style: { fontSize: 20, textAlign: "right", color: "#585858" },
+          }}
+          sx={{
+            minWidth: 400,
+            border: 4,
+            borderRadius: 3,
+            borderColor: "#95A67C",
+            backgroundColor: "#E5E5E5",
+          }}
+        />
 
-      <Grid
-        pb={2}
-        px={1}
-        mt={7}
-        sx={{ width: 400, backgroundColor: "#E5E5E5" }}
-        container
-        rowSpacing={2}
-      >
-        {txt_buttons.map((item) => renderButtons(item))}
-      </Grid>
+        <Typography
+          align="right"
+          sx={{
+            minWidth: 400,
+            color: "#585858",
+            fontSize: 25,
+            padding: 2,
+            border: 4,
+            borderRadius: 3,
+            borderColor: "#95A67C",
+            backgroundColor: "#E5E5E5",
+          }}
+        >
+          {result}
+        </Typography>
+
+        <Grid
+          pb={2}
+          px={1}
+          mt={7}
+          sx={{ width: 400, backgroundColor: "#E5E5E5" }}
+          container
+          rowSpacing={2}
+        >
+          {txt_buttons.map((item) => renderButtons(item))}
+        </Grid>
+      </Box>
     </Box>
   );
 }

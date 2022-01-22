@@ -18,6 +18,7 @@ const CustomButton = styled(Button)({
 export default function Homepage() {
   return (
     <Box
+      mb={10}
       display="flex"
       sx={{
         flexDirection: "column",
