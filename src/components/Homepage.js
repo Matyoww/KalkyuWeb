@@ -2,6 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import { Image } from "mui-image";
 import { Paper, Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CustomButton = styled(Button)({
   margin: 5,
@@ -53,13 +54,14 @@ export default function Homepage() {
             alignItems: "center",
           }}
         >
-          {/* <Button
-            sx={{ height: 45, width: 200, backgroundColor: "#B7CB9C" }}
-            variant="contained"
+          <Link
+            to="/basiccalc"
+            style={{
+              textDecoration: "none",
+            }}
           >
-            Calculator
-          </Button> */}
-          <CustomButton href="/basiccalc">CALCULATOR</CustomButton>
+            <CustomButton>CALCULATOR</CustomButton>
+          </Link>
           <CustomButton>WEIGHT</CustomButton>
           <CustomButton>VOLUME</CustomButton>
           <CustomButton>LENGTH</CustomButton>
