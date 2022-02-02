@@ -1,0 +1,78 @@
+.length{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.length:before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.length .content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 150px;
+}
+
+.length .content .metric-unit-opt{
+    height: auto;
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-top: 50px;
+    
+}
+
+.length .content .metric-unit-opt p{
+    font-size: 3rem;
+    color: #347571;
+}
+
+.length .content form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.length .content .metric-unit-opt .metric-unit-opt-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.length .content Button {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    align-self: center;
+    
+}
+
+.length .content Button:hover {
+    background: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+}

@@ -1,0 +1,75 @@
+.hero {
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.hero .content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 90px;
+    
+}
+
+.hero .content .container_right {
+    height: auto;
+    width: 550px;
+    display: flex;
+    padding-top: 75px;
+
+}
+
+.hero .content .container_left {
+    height: auto;
+    width: 550px;
+    display: flex;
+    padding-top: 50px;
+
+}
+
+.hero .content .container_left img{
+    position: absolute;
+    right: 0%;
+    width: auto;
+    height: 500px;
+}
+
+.hero .content .container_right p{
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--font-family-mulish);
+    letter-spacing: 0;
+    color: #347571;
+}
+
+.hero .button {
+    margin: 1rem 0;
+    width: 300px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    color: #333;
+}
+
+.hero .button:hover {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--secondary-dark);
+}
+
+@media screen and (max-width:940px) {
+    .hero .content p:nth-child(3) {
+        font-size: 2.6rem;
+    }
+
+    .hero .content p:nth-child(4) {
+        font-size: 1.6rem;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Mukta+Vaani:600|Mulish:700,500,800");

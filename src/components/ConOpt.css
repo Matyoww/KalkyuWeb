@@ -1,0 +1,84 @@
+.testimonials {
+    width: 100%;
+    margin: auto;
+    padding: 8rem 1rem 0 1rem;
+    background-color: #B9F4C9;
+    height: 100vh;
+}
+
+.testimonials .container {
+    width: 1240px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.testimonials h2 {
+    color: #347571;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.testimonials .container .content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.testimonials .card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0,0,0,.2);
+    padding: 1rem;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: 20px;
+}
+
+.testimonials img {
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+    
+}
+
+.testimonials .card p {
+    color: #787878;
+    font-size: 1.1rem;
+    margin: 12px;
+    text-align: center;
+}
+
+.testimonials .card span {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family-mulish);
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 940px) {
+    .testimonials .container {
+        width: 100%;
+    }
+
+    .testimonials .container .content {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .card {
+        max-width: 100%;
+        margin: 1rem;
+    }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Mukta+Vaani:600|Mulish:700,500,800");
+
+
+
+
+
+
