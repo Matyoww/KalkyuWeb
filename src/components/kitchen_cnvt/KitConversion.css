@@ -1,0 +1,37 @@
+.conversion-page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.conversion-page .container{
+    width: 1240px;
+    height: 100%;
+    background-color: red;
+    z-index: 999;
+
+}
+
+.container .navHeader{
+    display: flex;
+    align-items: center;
+    width: 1240px;
+    z-index: 999;
+    height: 90px;
+    padding: 0 1rem;
+}
+
+.conversion-nav img{
+    height: 60px;
+    padding-top: 15px;
+}
+
+.conversion-nav .btn-home-calc{
+    height: auto;
+    width: auto;
+
+
+}
+
+

@@ -28,9 +28,11 @@ const ConOpt = () => {
                         <img src={user2} alt='user2'/>
                         <p><span>Kitchen Measurement</span></p>
                         <p>weight, oven temperature, liquid volume</p>
-                        <Button>
-                            <FiArrowDownCircle style={{color: '#5EC57E', fontSize: '50px'}}/>
-                        </Button>
+                        <Link to="kitchenconpage">
+                            <Button>
+                                <FiArrowDownCircle style={{color: '#5EC57E', fontSize: '50px'}}/>
+                            </Button>
+                        </Link>
                     </div>
                     <div className='card'>
                         <img src={user3} alt='user3'/>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from './cnvt-images/7.png'
+import logo from '../cnvt_components/cnvt-images/7.png'
 import { Link } from 'react-scroll'
 
-import './CnvtNavbar.css'
+import './KitCnvtNavbar.css'
 
-const CnvtNavbar = () => {
+const KitCnvtNavbar = () => {
 
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
@@ -25,16 +25,13 @@ const CnvtNavbar = () => {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className='nav-item'>
-                        <Link to="length" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>LENGTH</Link>
+                        <Link to="weight" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>WEIGHT</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="mass" spy={true} smooth={true}  duration={500} onClick={closeMenu}>MASS</Link>
+                        <Link to="temperature" spy={true} smooth={true} duration={500} onClick={closeMenu}>TEMPERATURE</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="speed" spy={true} smooth={true}  duration={500} onClick={closeMenu}>SPEED</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="time" spy={true} smooth={true}  duration={500} onClick={closeMenu}>TIME</Link>
+                        <Link to="volume" spy={true} smooth={true} duration={500} onClick={closeMenu}>VOLUME</Link>
                     </li>
                 </ul>
             </nav>
@@ -42,4 +39,4 @@ const CnvtNavbar = () => {
     )
 }
 
-export default CnvtNavbar
+export default KitCnvtNavbar
