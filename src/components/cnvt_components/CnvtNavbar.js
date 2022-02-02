@@ -36,6 +36,9 @@ const CnvtNavbar = () => {
                     <li className='nav-item'>
                         <Link to="speed" spy={true} smooth={true}  duration={500} onClick={closeMenu}>SPEED</Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to="time" spy={true} smooth={true}  duration={500} onClick={closeMenu}>TIME</Link>
+                    </li>
                 </ul>
             </nav>
         </div>

@@ -5,6 +5,7 @@ import Length from './cnvt_components/Length';
 import Volume from './cnvt_components/Volume';
 import Mass from './cnvt_components/Mass';
 import Speed from './cnvt_components/Speed';
+import Time from './cnvt_components/Time';
 
 
 
@@ -16,6 +17,7 @@ function Conversion() {
         <Volume />
         <Mass />
         <Speed />
+        <Time />
       </div>
     )
   }
