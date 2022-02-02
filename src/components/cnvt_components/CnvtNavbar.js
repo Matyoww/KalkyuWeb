@@ -46,12 +46,3 @@ const CnvtNavbar = () => {
 }
 
 export default CnvtNavbar
-
-function length(){
-    return(
-        <div className='length-con'>
-            
-
-        </div>
-    )
-}

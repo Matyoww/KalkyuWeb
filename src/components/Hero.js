@@ -10,7 +10,7 @@ const Hero = () => {
                     <p>Get peace of mind knowing that you don’t have to manually calculate.</p>
                 </div>
                 <div className='container_left'>
-                    <img src={image} alt='image' />
+                    <img src={image} alt='measurement tools' />
                 </div>
                 
             </div>
