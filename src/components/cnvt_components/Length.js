@@ -15,8 +15,6 @@ const Length = () => {
     const [UnitValue, setUnitValue] = useState()
     const [UnitValueError, setUnitValueError] = useState(false)
     const [ConvertedValue, setConvertedValue] = useState(0)
-    const [x, setX] = useState(0)
-
 
     const handleChangeUnitFrom = (event) => {
         setUnitFrom(event.target.value);

@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Calcu from './Calcu'
 import ConOpt from './ConOpt'
 import Footer from './Footer'
+import About from "./About";
 
 function Homepage() {
   return(
@@ -12,6 +13,7 @@ function Homepage() {
       <Hero />
       <ConOpt />
       <Calcu />
+      <About />
       <Footer />
     </div>
   )
