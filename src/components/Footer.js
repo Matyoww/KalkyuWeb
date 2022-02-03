@@ -32,7 +32,7 @@ const Footer = () => {
                     </li>
                     |
                     <li className='nav-item'>
-                        <Link to='conpage'>Number System</Link>
+                        <Link to='numbersystem'>Number System</Link>
                     </li>
                 </ul>
                 <hr/>
