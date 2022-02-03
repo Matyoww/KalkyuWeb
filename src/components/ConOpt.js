@@ -38,7 +38,7 @@ const ConOpt = () => {
                         <img src={user3} alt='user3'/>
                         <p><span>Number System</span></p>
                         <p>binary, hexadecimal, decimal, octal</p>
-                        <Link to="conpage">
+                        <Link to="numbersystem">
                             <Button>
                                 <FiArrowDownCircle style={{color: '#5EC57E', fontSize: '50px'}}/>
                             </Button>
