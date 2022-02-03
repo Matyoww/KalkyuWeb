@@ -17,7 +17,7 @@ const ConOpt = () => {
                     <div className='card'>
                         <img src={user1} alt='user1'/>
                         <p><span>Unit Measurement</span></p>
-                        <p>length, mass, volume, speed, time</p>
+                        <p>length, mass, speed, time</p>
                         <Link to="conpage">
                             <Button>
                                 <FiArrowDownCircle style={{color: '#5EC57E', fontSize: '50px'}}/>

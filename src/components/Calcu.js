@@ -14,7 +14,7 @@ const Calcu = () => {
                     <span className='line'></span>
                     <p>DON'T GET AN EIGHT DIGIT CALCULATOR IF YOU HAVE TWELVE DIGIT NEEDS.</p>
                     <Link to="basiccalc">
-                        <Button variant='contained' size='large'>Explore</Button>
+                        <Button variant='contained' size='large'>Go to Calculator</Button>
                     </Link>
 
                     
