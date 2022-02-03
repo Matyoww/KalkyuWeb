@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -21,10 +22,21 @@ const Footer = () => {
                     <li className='nav-item'>
                         <a href='#about'>About</a>
                     </li>
+                    |
+                    <li className='nav-item'>
+                        <Link to="conpage">Unit Measurement</Link>
+                    </li>
+                    |
+                    <li className='nav-item'>
+                        <Link to='kitchenconpage'>Kitchen Measurement</Link>
+                    </li>
+                    |
+                    <li className='nav-item'>
+                        <Link to='conpage'>Number System</Link>
+                    </li>
                 </ul>
-                <div className='bottom'>
-                    <p>Kalkyu @ 2022. All rights reserved</p>
-                </div>
+                <hr/>
+                <p>© Copyright 2022 | KALKYU!! | All Rights Reserved</p>
             </div>
         </div>
     )
